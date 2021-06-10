@@ -12,6 +12,119 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <style>
+      .divider{								/* minor cosmetics */
+    display: table; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+.divider-txt{								/* minor cosmetics */
+    display: table; 
+    font-size: 35px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+
+.divider-txt-block{								/* minor cosmetics */
+    display: table; 
+    font-size: 35px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+
+
+
+.divider span { 
+    display: table-cell; 
+    position: relative;
+ }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 13px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+
+.divider-txt span:first-child, .divider-txt span:last-child {
+    width: 50%;
+    top: 22px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider-txt-home span:first-child, .divider-txt-home span:last-child {
+    width: 50%;
+    top: 10px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+.divider-txt-block span:first-child, .divider-txt-block span:last-child {
+    width: 50%;
+    top: 17px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+    background-image: -webkit-linear-gradient(180deg, transparent, #000);
+    background-image: -moz-linear-gradient(180deg, transparent, #000);
+    background-image: -o-linear-gradient(180deg, transparent, #000);
+    background-image: linear-gradient(90deg, transparent, #614021);
+}
+.divider span:nth-child(2) {
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.5rem;
+    color: #d1a170;
+    padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+
+.divider-souls span:nth-child(2) {
+    top: -22px;
+    color: #d1a170;
+    padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+.divider-hollow span:nth-child(2) {
+    top: -10px;
+    color: #d1a170;
+    padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+
+.txt-block span:nth-child(2) {
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.5rem;
+    color: #d1a170;
+    padding: 0px 20px; 
+    width: auto; 
+    white-space: nowrap;
+}
+.divider span:last-child { /*Color modific*/    
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #000, transparent);
+    background-image: -moz-linear-gradient(180deg, #000, transparent);
+    background-image: -o-linear-gradient(180deg, #000, transparent);
+    background-image: linear-gradient(90deg, #614021, transparent);
+}
+    </style>
     
     <title>Journey Link</title>
 </head>
@@ -22,23 +135,23 @@
 			<div class="row">
 				<div class="col-12">
 					<nav class="navbar navbar-expand-md navbar-dark">
-						<a class="navbar-brand" href="Index.html"><img src="files/img/logo.svg" alt=""></a>	
+						<a class="navbar-brand" href="index.html"><img src="files/img/logo.svg" alt=""></a>	
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto py-4 py-md-0">
                   <li class="nav-item active pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="Index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="files/pages/games.html">Games</a>
+                    <a class="nav-link" href="games.html">Games</a>
                   </li>
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="files/pages/trilhas.html">Trilhas</a>
+                    <a class="nav-link" href="trilhas.html">Trilhas</a>
                   </li>								
                   <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                    <a class="nav-link" href="files/pages/sobre.html">Sobre Nós</a>
+                    <a class="nav-link" href="sobre.html">Sobre Nós</a>
                   </li>
                 </ul>
               </div>						
@@ -98,7 +211,7 @@
 
           <div class="col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe src="https://www.youtube.com/embed/6b-9ABWEl28?controls=0" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/-5T3P9yap8Q?controls=0" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
             </div>
           </div>
 
@@ -112,16 +225,18 @@
           
           <div class="col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7zu9FV3tuB8" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yoptcLQRGwQ" allowfullscreen></iframe>
             </div>
           </div>
 
           <div class="col-md-6">
               <h1>Função</h1>
-            <p>Recentemente os jogos digitais tiveram um crescimento considerável no mercado. A produção desses jogos levou a indústria a expandir elementos importantes dessas áreas, consequentemente a trilha sonora já relevante ganhou muito reconhecimento e investimento.
-            </p>
-            <p>Passando a ser considerada como um fator determinante na produção dos jogos, deixando de exercer a simples função de um som de fundo e efeitos sonoros, para a interação com o jogador desempenhando funções cruciais na jogabilidade.
-            </p>
+<p>
+A Música tem a função de guiar o jogador na gameplay e na narrativa,quando o jogador entre em batalha por exemplo, a música fica mais tensa e agitada como um incentivo para o jogador lutar e seguir em frente,porém quando a batalha acaba a música também ou em alguns casos fica num ritmo mais lento e suave .
+</p>
+<p>
+A trilha sonora permite a interação e imersão do jogador, além de reforçar a dramaticidade da narrativa , manter o jogador focado e contextualizar cenários criando uma  ambientação, completando assim a ideia que o jogo quer passar de diferentes maneiras.
+</p>
           </div>
 
         </div>
@@ -130,32 +245,31 @@
 
   <section class="my-5">
     <div class="container">
-      <div class="row text-center">
-        <div class="col-12">
-          <h1>Games</h1>
-        </div>
-      </div>
+      <div class="row text-center broken">
+        <div class="col-12 col-md-12">
+          <div class="divider divider-txt-home align-middle"><span></span><span>GAMES</span><span></span></div>
+      </div> 
     </div>
-  </section>
+    </section>
 
   <section class="my-5">
     <div class="container">
       <div class="row text-center">
 
         <div class="col-12 col-md-6 col-lg-4">            
-          <a href="files/pages/games/dark.html">
+          <a href="dark.html">
             <img id="zoom" src="https://cdn.discordapp.com/attachments/850503148028297317/851983700383498240/darksouls.png" width="300" >
           </a>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="files/pages/games/hollow.html">
+          <a href="hollow.html">
             <img id="zoom" src="https://cdn.discordapp.com/attachments/850503148028297317/851998411342217256/hollow.png" width="300" >
           </a>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <a href="files/pages/games/genshin.html">
+          <a href="genshin.html">
             <img id="zoom" src="https://cdn.discordapp.com/attachments/850503148028297317/851998409463824404/genshin.png" width="300" >
           </a>
         </div>
