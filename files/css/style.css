@@ -47,13 +47,28 @@ p{
     font-family: 'Marcellus SC', serif;
     color: #d1a170;
 }
-.divider {								/* minor cosmetics */
+.divider{								/* minor cosmetics */
+    display: table; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+.divider-txt{								/* minor cosmetics */
     display: table; 
     font-size: 35px; 
     text-align: center; 
     width: 75%; 						/* divider width */
     margin: 40px auto;					/* spacing above/below */
 }
+
+.divider-txt-block{								/* minor cosmetics */
+    display: table; 
+    font-size: 35px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+
 
 
 .divider span { 
@@ -68,6 +83,34 @@ p{
     background-position: 0 0, 0 100%;
     background-repeat: no-repeat;
 }
+
+
+.divider-txt span:first-child, .divider-txt span:last-child {
+    width: 50%;
+    top: 22px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider-txt-games span:first-child, .divider-txt-games span:last-child {
+    width: 50%;
+    top: 17px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
+.divider-txt-block span:first-child, .divider-txt-block span:last-child {
+    width: 50%;
+    top: 17px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+
 .divider span:first-child {				/* color changes in here */
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
     background-image: -webkit-linear-gradient(180deg, transparent, #000);
@@ -76,8 +119,34 @@ p{
     background-image: linear-gradient(90deg, transparent, #614021);
 }
 .divider span:nth-child(2) {
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.5rem;
     color: #d1a170;
     padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+
+.divider-souls span:nth-child(2) {
+    top: -22px;
+    color: #d1a170;
+    padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+.divider-hollow span:nth-child(2) {
+    top: -10px;
+    color: #d1a170;
+    padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+
+.txt-block span:nth-child(2) {
+    font-family: 'Marcellus SC', serif;
+    font-size: 1.5rem;
+    color: #d1a170;
+    padding: 0px 20px; 
     width: auto; 
     white-space: nowrap;
 }
