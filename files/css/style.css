@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@50&display=swap');
+
+footer{
+    background-color: black;
+}
+footer h1{
+    font-family: 'Roboto Bold', serif;
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 2px;
+}
+
+#zoom{
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+#zoom:hover {
+    transform : scale(1.15);
+    -moz-transform : scale(1.15);
+    -webkit-transform : scale(1.15);
+    -o-transform : scale(1.15);
+    -ms-transform : scale(1.15);
+    box-shadow: 0 0.5em 0.5em -0.5em #d1a170;
+
+}
+p{
+	font-family: 'Roboto Slab', sans-serif;
+	color: black;
+	margin: 0;
+	padding-top: 10px;
+	opacity: 1;
+	transform: translate(0);
+    transition: all 300ms linear;
+    transition-delay: 1700ms;
+}
+
+.box{
+    height: 150px;
+}
+
+.broken{
+    font-family: 'Marcellus SC', serif;
+    color: #d1a170;
+}
+.divider {								/* minor cosmetics */
+    display: table; 
+    font-size: 35px; 
+    text-align: center; 
+    width: 75%; 						/* divider width */
+    margin: 40px auto;					/* spacing above/below */
+}
+
+
+.divider span { 
+    display: table-cell; 
+    position: relative;
+ }
+.divider span:first-child, .divider span:last-child {
+    width: 50%;
+    top: 13px;							/* adjust vertical align */
+    -moz-background-size: 100% 2px; 	/* line width */
+    background-size: 100% 2px; 			/* line width */
+    background-position: 0 0, 0 100%;
+    background-repeat: no-repeat;
+}
+.divider span:first-child {				/* color changes in here */
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(#000));
+    background-image: -webkit-linear-gradient(180deg, transparent, #000);
+    background-image: -moz-linear-gradient(180deg, transparent, #000);
+    background-image: -o-linear-gradient(180deg, transparent, #000);
+    background-image: linear-gradient(90deg, transparent, #614021);
+}
+.divider span:nth-child(2) {
+    color: #d1a170;
+    padding: 0px 40px; 
+    width: auto; 
+    white-space: nowrap;
+}
+.divider span:last-child { /*Color modific*/    
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#000), to(transparent));
+    background-image: -webkit-linear-gradient(180deg, #000, transparent);
+    background-image: -moz-linear-gradient(180deg, #000, transparent);
+    background-image: -o-linear-gradient(180deg, #000, transparent);
+    background-image: linear-gradient(90deg, #614021, transparent);
+}
+
+.alingtext{
+    margin-top: 50%;
+}
+
+.tetkk{
+    margin-top: 3.6rem!important;
+}
+
+.kkk{
+    margin-top: -1.75rem!important;
+}
+
+.kkk h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.img-respon{
+    width: 300px;
+    height: 100%;
+}
+
+
+@media (min-width: 1200px) {
+    header {
+        position: relative;
+        height: 75vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+
+}
+@media (min-width: 992px) {
+    header {
+        position: relative;
+        height: 75vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+      }
+
+
+}
+@media (min-width: 450px) and (max-width: 450px) {
+    header {
+        position: relative;
+        height: 50vh;
+        min-height: 0%;
+        width: 100%;
+        overflow: hidden;
+      }
+    .img-respon{
+        width: 150px;
+        height: 100%;
+    }
+
+
+}
+@media (min-width: 576px) {
+
+
+}

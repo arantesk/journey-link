@@ -1,0 +1,55 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #1a1713;
+	background-image: url('');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 7%;
+	background-color: #1A1713;
+	overflow-x: hidden;
+    transition: all 200ms linear;
+}
+
+footer{
+    background: black;
+}
+footer h1{
+    background-color: black;
+    font-family: 'Roboto Bold', serif;
+    font-size: 10px;
+    color: gray;
+    letter-spacing: 2px;
+}
+
+#zoom{
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+
+#zoom:hover {
+    transform : scale(1.15);
+    -moz-transform : scale(1.15);
+    -webkit-transform : scale(1.15);
+    -o-transform : scale(1.15);
+    -ms-transform : scale(1.15);
+    box-shadow: 0 0.5em 0.5em -0.5em #d1a170;
+
+}
+
+p{
+	font-family: 'Roboto Slab', sans-serif;
+	color: #fff;
+	margin: 0;
+	padding-top: 10px;
+	opacity: 1;
+	transform: translate(0);
+    transition: all 300ms linear;
+    transition-delay: 1700ms;
+}
